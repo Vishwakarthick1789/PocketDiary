@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Diary</title>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <div class="container">
+        <header class="header text-center">
+            <h1><i class="fa-solid fa-book-open"></i> Pocket Diary</h1>
+            <p>Capture your thoughts, beautifully.</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Glassmorphism Add Entry Form -->
+            <section class="glass-card create-entry-section">
+                <h2>New Entry</h2>
+                <form id="diary-form">
+                    <div class="form-group">
+                        <label for="entry-title">Title</label>
+                        <input type="text" id="entry-title" placeholder="What's going on?" required>
+                    </div>
+
+                    <div class="form-group mood-selector">
+                        <label>Mood</label>
+                        <div class="mood-options">
+                            <label><input type="radio" name="mood" value="😊" required> <span>😊</span></label>
+                            <label><input type="radio" name="mood" value="😎"> <span>😎</span></label>
+                            <label><input type="radio" name="mood" value="🤔"> <span>🤔</span></label>
+                            <label><input type="radio" name="mood" value="😢"> <span>😢</span></label>
+                            <label><input type="radio" name="mood" value="😡"> <span>😡</span></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="entry-content">Your Thoughts</label>
+                        <textarea id="entry-content" rows="4" placeholder="Dear Diary..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        <i class="fa-solid fa-pen"></i> Save Entry
+                    </button>
+                </form>
+            </section>
+
+            <!-- Rendered Diary Entries -->
+            <section class="entries-section">
+                <div class="entries-header">
+                    <h2>Past Entries</h2>
+                    <span id="entries-count">0 entries</span>
+                </div>
+                
+                <div id="entries-list" class="entries-list">
+                    <!-- Cards will be dynamically injected here via JS -->
+                </div>
+                
+                <div id="empty-state" class="empty-state">
+                    <i class="fa-solid fa-cloud"></i>
+                    <p>It's quiet here. Write your first entry above!</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
