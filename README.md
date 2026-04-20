@@ -37,3 +37,5 @@ It's incredibly simple to use! Because it is constructed using Vanilla web langu
 
 ---
 *Created meticulously with code over vanilla HTML/JS parameters.*
+
+PocketDiary - write down your memories and experiences and save it for future.
