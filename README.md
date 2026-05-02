@@ -32,7 +32,7 @@ It's incredibly simple to use! Because it is constructed using Vanilla web langu
 1. Type a Title for your day.
 2. Select the emoji that matches your mood.
 3. Write your thoughts in the text area.
-4. Click **Save Entry** and watch it animate directly onto your timeline below!
+4. Click **Save Entry** and watch it animate directly onto your timeline below
 5. Change your mind? Click the little Trash Can icon to instantly delete a specific entry. 
 
 ---
