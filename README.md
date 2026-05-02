@@ -21,7 +21,7 @@ It's incredibly simple to use! Because it is constructed using Vanilla web langu
    ```bash
    git clone https://github.com/Vishwakarthick1789/PocketDiary.git
    ```
-2. Navigate into the folder and simply double-click the `index.html` file to instantly open it entirely in your browser. 
+2. Navigate into the folder and simply double-click the `index.html` file to instantly open it entirely in your browser
 
 ## 🛠️ Technology Stack
 * **Structure:** Semantic HTML5
